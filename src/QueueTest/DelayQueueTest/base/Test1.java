@@ -46,6 +46,7 @@ public class Test1 implements Runnable, Delayed {
 
     @Override
     public int compareTo(Delayed o) {
+//        验证flag，在里面做判断
         System.out.println("compareTo");
         if (flag) {
             Test1 t = (Test1) o;
